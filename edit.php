@@ -238,9 +238,9 @@ if ($records == "-1") {
         }
         else {
             echo "     <td class=\"n\">\n";
-            echo "      <a href=\"edit_record.php?id=" . $r['id'] . "&amp;domain=" . $zone_id . "\">
+            echo "      <a class=\"edit\" href=\"edit_record.php?id=" . $r['id'] . "&amp;domain=" . $zone_id . "\">
                                                 <img src=\"images/edit.gif\" alt=\"[ " . _('Edit record') . " ]\"></a>\n";
-            echo "      <a href=\"delete_record.php?id=" . $r['id'] . "&amp;domain=" . $zone_id . "\">
+            echo "      <a class=\"delete\" href=\"delete_record.php?id=" . $r['id'] . "&amp;domain=" . $zone_id . "\">
                                                 <img src=\"images/delete.gif\" ALT=\"[ " . _('Delete record') . " ]\" BORDER=\"0\"></a>\n";
             echo "     </td>\n";
         }
@@ -291,7 +291,7 @@ if ($records == "-1") {
     echo "    </tr>\n";
     echo "    <tr>\n";
     echo "     <td class=\"n\">\n";
-    echo "      <a href=\"edit_comment.php?domain=" . $zone_id . "\">
+    echo "      <a class=\"edit\" href=\"edit_comment.php?domain=" . $zone_id . "\">
                             <img src=\"images/edit.gif\" alt=\"[ " . _('Edit comment') . " ]\"></a>\n";
     echo "     </td>\n";
     echo "     <td colspan=\"4\"><textarea rows=\"5\" cols=\"80\" name=\"comment\">" . htmlspecialchars(get_zone_comment($zone_id)) . "</textarea></td>\n";
