@@ -26,6 +26,9 @@ table {
     font-size:		90%;
     text-align:		left;
     vertical-align:	top;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-color: #eee;
 }
 
 img {
@@ -42,14 +45,28 @@ img {
 }
 
 td {
-    padding:		0 2px 0 2px;
+    padding:		2px;
     vertical-align:	top;
+    border: solid 1px #aaa;
+}
+
+tr:nth-child(2n-1) td {
+    background: #DEEBF7;
+}
+
+tr:nth-child(2n) td {
 }
 
 td.actions {
+    width: 160px;
+    text-align: center;
 }
 
-td.name {
+td.actions a + a {
+    margin-left: 40px;
+}
+
+/*td.name {
     background:		#ffffff;
     border:			1px solid #000000;
 }
@@ -73,7 +90,7 @@ td.cell {
     background:		#ffffff;
     border:			1px solid #000000;
 }
-
+*/
 td.dnssec {
     width: 50px;
 }
@@ -169,7 +186,7 @@ td.checkbox {
     font-size:		80%;
 }
 
-a.delete {
+/*a.delete {
     margin-left: 20px;
 
 }
@@ -177,7 +194,7 @@ a.edit {
     margin-left: 20px;
 
 }
-
+*/
 span.menuitem {
         margin: 10px;
 }
