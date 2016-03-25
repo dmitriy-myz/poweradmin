@@ -63,9 +63,14 @@ td.actions {
 }
 
 td.actions a + a {
+    width: 160px;
     margin-left: 40px;
 }
 
+td:first-child {
+    width: 100px;
+    text-align: center;
+}
 /*td.name {
     background:		#ffffff;
     border:			1px solid #000000;
